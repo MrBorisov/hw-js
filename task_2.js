@@ -3,7 +3,7 @@ a) Организовать такой массив для хранения то
 b) Организовать функцию countBasketPrice, которая будет считать стоимость корзины.
 
 */
-
+'use strict';
 function countBasketPrice(arr) {
     let count = 0;
     let i = 0;
