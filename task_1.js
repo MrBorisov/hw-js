@@ -9,14 +9,16 @@ while (x < 100) {
     if (x != 2 && x % 2 == 0) {
         x += 1
         continue
-    } else if (x % 3 == 0 && x != 3) {
-        x += 1
-        continue
-    } else if (x % 5 == 0 && x != 5) {
-        x += 1
-        continue
-    } else {
-        console.log(x);
+    }
+    let i = 3
+    while (true) {
+        if (x % i == 0 && x != i) {
+            break;
+        } else if (i > 100) {
+            console.log(x);
+            break
+        }
+        i += 2;
     }
     x += 1
 }
