@@ -3,20 +3,20 @@
 const Basket = {
     goods: [
         {
-            id_product: 001,
-            product_name: "Хлебушек",
+            id: 111,
+            name: "Хлебушек",
             price: 38,
-            quantity: 1
+            quan: 1
         },
         {
-            id_product: 002,
-            product_name: "Редиска",
+            id: 112,
+            name: "Редиска",
             price: 25,
-            quantity: 2
+            quan: 2
         }
     ],
     countBasketPrice() {
-        return this.goods.reduce((totalPrice, cartItem) => totalPrice += cartItem.price, 0);
+        return this.goods.reduce((totalPrice, cartItem) => totalPrice += cartItem.price * cartItem.quan, 0);
     }
 };
 
